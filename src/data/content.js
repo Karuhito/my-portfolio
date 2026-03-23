@@ -4,7 +4,7 @@ export const profile = {
   location: "Ibaraki, Japan",
   languages: ["Python","JavaScript"],
   openToWork: true,
-  // interests: ["Distributed Systems", "Performance Engineering", "Cloud Native"],
+  interests: [],
   stats: [
     { value: "2+", label: "Years Exp." },
     { value: "3+", label: "Projects" },
@@ -18,6 +18,7 @@ export const profile = {
   contact: {
     email: "kazutopg@gmail.com",
     github: "https://github.com/Karuhito",
+    linkedin: ""
   },
 };
 

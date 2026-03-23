@@ -10,15 +10,11 @@ export default function Hero({ scrollTo }) {
           <span>▸</span> Backend Engineer
         </div>
         <h1 className="hero-name">
-          <div>YAMADA</div>
-          <div className="line2">TARO.</div>
+          <div>ENOMOTO</div>
+          <div className="line2">KAZUTO.</div>
         </h1>
         <p className="hero-sub">
-          高負荷・高可用性システムの設計と実装が得意な
-          <span className="hl"> バックエンドエンジニア</span>。<br />
-          Go / Python を主軸に、クラウドネイティブな
-          <span className="hl"> 分散システム</span>を構築。<br />
-          スケーラビリティと信頼性を両立するアーキテクチャを追求しています。
+          Python を主軸にする<span className="hl"> バックエンドエンジニア</span>。
         </p>
         <div className="hero-cta">
           <a href="#" className="btn-primary" onClick={(e) => { e.preventDefault(); scrollTo('projects'); }}>
