@@ -51,7 +51,7 @@ export const projects = [
   {
     title: "日々のタスクを記録・管理できるアプリ",
     desc: "Djangoを用いて日常のタスクを管理できるアプリを制作しました。",
-    tags: ["Python","SQLite"],
+    tags: ["Python","Django","SQLite"],
     link: "https://github.com/Karuhito/JournaLog_app",
   },
   {
@@ -64,13 +64,13 @@ export const projects = [
 
 export const timeline = [
   {
-    date: "2025.04 – 現在",
+    date: "2025.04 - 現在",
     title: "専門校へ進学。",
     org: "KADOKAWAドワンゴ情報工科学院",
     desc: "授業ではPythonを中心に学習しています。",
   },
   {
-    date: "2022.04 – 2025.03",
+    date: "2022.04 - 2025.03",
     title: "通信制の高校へ",
     org: "N高等学校 普通科",
     desc: "3年生の時に学校の学習サービスを利用し、プログラミングについて学び始め、プログラミングを仕事にしたいと思うようになる。",

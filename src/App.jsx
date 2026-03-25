@@ -59,8 +59,8 @@ export default function App() {
       <Experience />
       <Contact />
       <footer className="footer">
-        <p>© 2025 Yamada Taro. Built with React.</p>
-        <p className="footer-sub">BACKEND ENGINEER / TOKYO, JAPAN</p>
+        <p>© 2025 Enomoto Kazuto. Built with React.</p>
+        <p className="footer-sub">BACKEND ENGINEER / IBARAKI, JAPAN</p>
       </footer>
     </>
   );
