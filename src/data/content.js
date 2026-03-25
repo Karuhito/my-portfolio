@@ -4,7 +4,7 @@ export const profile = {
   location: "Ibaraki, Japan",
   languages: ["Python","JavaScript"],
   openToWork: true,
-  interests: [React,JavaScript,TypeScript],
+  interests: ["React","TypeScript"],
   stats: [
     { value: "2+", label: "Years Exp." },
     { value: "3+", label: "Projects" },
