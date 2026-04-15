@@ -22,7 +22,7 @@ export default function Projects() {
                   <span className="project-tag" key={t}>{t}</span>
                 ))}
               </div>
-              <a href={p.link} className="project-link">VIEW →</a>
+              <a href={p.link} target='_blank' className="project-link">VIEW →</a>
             </div>
           </div>
         ))}

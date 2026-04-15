@@ -60,7 +60,7 @@
 }
 .project-link {
   font-size: 10px;
-  color: var(--text3);
+  color: var(--text);
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;

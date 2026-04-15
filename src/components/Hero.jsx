@@ -7,14 +7,14 @@ export default function Hero({ scrollTo }) {
       <div className="grid-bg" />
       <div className="hero-content">
         <div className="hero-tag">
-          <span>▸</span> Backend Engineer
+          <span>▸</span>Engineer
         </div>
         <h1 className="hero-name">
           <div>ENOMOTO</div>
           <div className="line2">KAZUTO.</div>
         </h1>
         <p className="hero-sub">
-          Python を主軸にする<span className="hl"> バックエンドエンジニア</span>。
+          Python を主軸にする<span className="hl"> エンジニア</span>。
         </p>
         <div className="hero-cta">
           <a href="#" className="btn-primary" onClick={(e) => { e.preventDefault(); scrollTo('projects'); }}>

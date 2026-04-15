@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="contact-inner fade-in">
         <h2>一緒に働きませんか？</h2>
         <p>
-          バックエンドエンジニアとして実務経験を積める企業を探しています。
+          ポジション関係なく実務経験を積ませていただける企業様を探しています。
         </p>
         <div className="contact-links">
           <a href={`mailto:${profile.contact.email}`} className="contact-link">
