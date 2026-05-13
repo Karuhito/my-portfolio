@@ -11,7 +11,7 @@ export const profile = {
     { value: "2", label: "Languages" },
   ],
   bio: [
-    "榎本 和斗(19歳)、プログラミングの専門校に通う学生です。",
+    "榎本 和斗(19歳)、プログラミングの専門スクールに通う学生です。",
     "Pythonを中心としたwebアプリ開発を行ってきました。",
     "",
   ],
@@ -56,12 +56,15 @@ export const projects = [
   {
     title: "フレンドと競い合える運動記録アプリ",
     desc: "チーム開発でFirebase+VanillaJSを用いて運動記録をスコア化し、フレンドと競い合うことができるアプリを制作しました。私はスコア計算部分の実装に携わりました。",
-    tags: ["JavaScript","Firebase"],
+    tags: ["JavaScript","Firebase","チーム開発"],
     link: "https://github.com/Tech-Jam-KDG-2026-Winter/Team-13-HTML-CSS-JS",
   },
-  /*{
-    title:
-  }*/
+  {
+    title: "みんなの空き時間を確認できるアプリ",
+    desc: "フロントエンドにReact-TS、バックエンドにFastAPIを用いて友達に暇な時間の情報を共有することで、遊ぶ時間を決めることができるアプリを制作しました。",
+    tags: ["TypeScript","React", "Python", "FastAPI", "Supabase"],
+    link: "https://github.com/Karuhito/group-schedule-adjustment-app",
+  }
 ];
 
 export const timeline = [
