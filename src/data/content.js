@@ -18,6 +18,7 @@ export const profile = {
   contact: {
     email: "kazutopg@gmail.com",
     github: "https://github.com/Karuhito",
+    wantedly: "https://www.wantedly.com/id/kazuto_enomoto1028",
   },
 };
 

@@ -26,6 +26,12 @@ export default function Contact() {
             </svg>
             GITHUB
           </a>
+          <a href={profile.contact.wantedly} target="_blank" rel="noreferrer" className="contact-link">
+            <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16">
+              <path d="M16.671 3L13.5 13.946 11.328 7H8.672L6.5 13.946 3.329 3H0l4.5 18h2.836l2.664-8.125L12.664 21h2.836L20 3z" />
+            </svg>
+            WANTEDLY
+          </a>
         </div>
       </div>
     </section>
