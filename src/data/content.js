@@ -12,8 +12,8 @@ export const profile = {
   ],
   bio: [
     "榎本 和斗(19歳)、プログラミングの専門スクールに通う学生です。",
-    "Pythonを中心としたwebアプリ開発を行ってきました。",
-    "",
+    "Pythonを中心としたwebアプリ開発を行っています。",
+    "技術スタックを広げるため、Java、TypeScript、Reactなどフロント/バックに関わらず幅広く学習しています",
   ],
   contact: {
     email: "kazutopg@gmail.com",
@@ -23,14 +23,19 @@ export const profile = {
 
 export const skills = [
   {
+    icon: "🖥️",
+    title: "フロントエンド",
+    tags: ["JavaScript","TypeScript"],
+  },
+  {
     icon: "⚙️",
     title: "バックエンド",
-    tags: ["Python"],
+    tags: ["Python","Java"],
   },
   {
     icon: "🗄️",
     title: "データベース",
-    tags: ["MySQL"],
+    tags: ["MySQL","PostgreSQL"],
   },
   /*
   {
