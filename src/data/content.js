@@ -7,7 +7,7 @@ export const profile = {
   interests: ["React","TypeScript"],
   stats: [
     { value: "2", label: "Years Exp." },
-    { value: "3", label: "Projects" },
+    { value: "4", label: "Projects" },
     { value: "2", label: "Languages" },
   ],
   bio: [
@@ -39,15 +39,16 @@ export const skills = [
     tags: ["MySQL","PostgreSQL"],
   },
   /*
+  // 学んだら追加予定
   {
     icon: "☁️",
     title: "インフラ・クラウド",
-    tags: ["AWS", "Docker"],
+    tags: [],
   },
   {
     icon: "🔐",
     title: "セキュリティ・設計",
-    tags: ["OAuth2", "JWT", "DDD", "Clean Architecture", "Microservices"],
+    tags: [],
   },
   */
 ];
@@ -70,6 +71,12 @@ export const projects = [
     desc: "フロントエンドにReact-TS、バックエンドにFastAPIを用いて友達に暇な時間の情報を共有することで、遊ぶ時間を決めることができるアプリを制作しました。",
     tags: ["TypeScript","React", "Python", "FastAPI", "Supabase"],
     link: "https://github.com/Karuhito/group-schedule-adjustment-app",
+  },
+  {
+    title: "持ち物チェックアプリ",
+    desc: "フロント/バック両エンドにTypeScriptを採用し、1つの言語で一貫した開発を行いました。",
+    tags: ["TypeScript","React","LocalStorage"],
+    link: "https://github.com/Karuhito/belongings-check-app",
   }
 ];
 
