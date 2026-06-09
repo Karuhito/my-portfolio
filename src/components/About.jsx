@@ -51,7 +51,7 @@ export default function About() {
           <div className="photo-wrapper">
             {/* src/assets/profile.jpg に写真を配置してください */}
             <img
-              src="/myphoto.jpeg"
+              src="/myface.jpg"
               alt="Profile photo"
               className="photo-img"
               onError={(e) => {
