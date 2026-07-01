@@ -34,7 +34,6 @@ export default function About() {
               <div>&nbsp;&nbsp;<span className="t-key">"lang"</span>: [{profile.languages.map((l, i) => (
                 <span key={l}><span className="t-val">"{l}"</span>{i < profile.languages.length - 1 ? ', ' : ''}</span>
               ))}],</div>
-              <div>&nbsp;&nbsp;<span className="t-key">"open_to_work"</span>: <span className="t-val">{String(profile.openToWork)}</span>,</div>
               <div>&nbsp;&nbsp;<span className="t-key">"interests"</span>: [</div>
               {profile.interests.map((interest, i) => (
                 <div key={i}>&nbsp;&nbsp;&nbsp;&nbsp;<span className="t-str">"{interest}"</span>{i < profile.interests.length - 1 ? ',' : ''}</div>
@@ -70,12 +69,6 @@ export default function About() {
             <div className="photo-glow" />
             {/* アクセントリング */}
             <div className="photo-ring" />
-          </div>
-
-          {/* 写真下のバッジ */}
-          <div className="photo-badge">
-            <span className="badge-dot" />
-            就活中 / Open to Work
           </div>
         </div>
 

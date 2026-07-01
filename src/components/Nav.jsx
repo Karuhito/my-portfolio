@@ -24,10 +24,6 @@ export default function Nav() {
           </li>
         ))}
       </ul>
-      <div className="nav-status">
-        <span className="status-dot" />
-        就活中
-      </div>
     </nav>
   );
 }
