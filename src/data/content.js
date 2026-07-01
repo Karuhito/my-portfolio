@@ -3,8 +3,7 @@ export const profile = {
   role: "Engineer",
   location: "Ibaraki, Japan",
   languages: ["Python","JavaScript"],
-  openToWork: true,
-  interests: ["React","TypeScript"],
+  interests: ["React","TypeScript","Java","AWS"],
   stats: [
     { value: "2", label: "Years Exp." },
     { value: "4", label: "Projects" },
@@ -12,7 +11,7 @@ export const profile = {
   ],
   bio: [
     "榎本 和斗(19歳)、プログラミングの専門スクールに通う学生です。",
-    "Pythonを中心としたwebアプリ開発を行っています。",
+    "Pythonを使いバックエンドを中心としたwebアプリ開発を行っています。",
     "技術スタックを広げるため、Java、TypeScript、Reactなどフロント/バックに関わらず幅広く学習しています",
   ],
   contact: {
@@ -26,12 +25,12 @@ export const skills = [
   {
     icon: "🖥️",
     title: "フロントエンド",
-    tags: ["JavaScript","TypeScript"],
+    tags: ["JavaScript","TypeScript","React"],
   },
   {
     icon: "⚙️",
     title: "バックエンド",
-    tags: ["Python","Java"],
+    tags: ["Python(Django)",],
   },
   {
     icon: "🗄️",
@@ -56,7 +55,7 @@ export const skills = [
 export const projects = [
   {
     title: "日々のタスクを記録・管理できるアプリ",
-    desc: "Djangoを用いて日常のタスクを管理できるアプリを制作しました。4つのCRUD機能を盛り込んでいます。",
+    desc: "Djangoを用いて日常のタスクを管理できるアプリを制作しました。Goal、Todo、Schedule、Reflectionの4つのCRUD機能を盛り込んでいます。",
     tags: ["Python","Django","SQLite"],
     link: "https://github.com/Karuhito/JournaLog_app",
   },
@@ -91,6 +90,6 @@ export const timeline = [
     date: "2022.04 - 2025.03",
     title: "通信制の高校へ",
     org: "N高等学校 普通科",
-    desc: "3年生の時に学校の学習サービスを利用し、プログラミング学習を始め、プログラミングを仕事にしたいと思うようになる。",
+    desc: "3年次の時に学校の学習サービスを利用し、プログラミング学習を始め、プログラミングを仕事にしたいと思うようになる。",
   },
 ];
