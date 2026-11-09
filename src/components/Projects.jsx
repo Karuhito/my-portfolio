@@ -28,7 +28,7 @@ export default function Projects() {
               </div>
               <a href={p.link} target="_blank" rel="noreferrer" className="project-link">
                 GitHub
-                <ArrowUpRight size={16} strokeWidth={2} />
+                <ArrowUpRight size={16} strokeWidth={2} aria-hidden="true" />
               </a>
             </div>
           ))}
