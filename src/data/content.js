@@ -4,11 +4,6 @@ export const profile = {
   location: "Ibaraki, Japan",
   languages: ["Python","JavaScript"],
   interests: ["React","TypeScript","Java","AWS"],
-  stats: [
-    { value: "2", label: "Years Exp." },
-    { value: "4", label: "Projects" },
-    { value: "2", label: "Languages" },
-  ],
   bio: [
     "榎本 和斗(19歳)、プログラミングの専門スクールに通う学生です。",
     "Pythonを使いバックエンドを中心としたwebアプリ開発を行っています。",

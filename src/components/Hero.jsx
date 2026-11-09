@@ -1,37 +1,25 @@
-import { profile } from '../data/content';
 import './Hero.css';
 
+/**
+ * ファーストビュー（名前・肩書き・主要ボタン）。
+ * @param {{ scrollTo: (id: string) => void }} props
+ * @returns {JSX.Element}
+ */
 export default function Hero({ scrollTo }) {
   return (
     <section id="hero" className="hero">
-      <div className="grid-bg" />
-      <div className="hero-content">
-        <div className="hero-tag">
-          <span>▸</span>Engineer
-        </div>
-        <h1 className="hero-name">
-          <div>ENOMOTO</div>
-          <div className="line2">KAZUTO.</div>
-        </h1>
-        <p className="hero-sub">
-          Python を主軸にする<span className="hl"> バックエンドエンジニア</span>。
-        </p>
+      <div className="container">
+        <h1 className="hero-name">榎本 和斗</h1>
+        <p className="hero-en">Enomoto Kazuto</p>
+        <p className="hero-sub">Python を主軸にする バックエンドエンジニア。</p>
         <div className="hero-cta">
-          <a href="#" className="btn-primary" onClick={(e) => { e.preventDefault(); scrollTo('projects'); }}>
-            VIEW PROJECTS
+          <a href="#projects" className="btn-primary" onClick={(e) => { e.preventDefault(); scrollTo('projects'); }}>
+            制作物を見る
           </a>
-          <a href="#" className="btn-outline" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }}>
-            GET IN TOUCH
+          <a href="#contact" className="btn-outline" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }}>
+            連絡する
           </a>
         </div>
-      </div>
-      <div className="hero-numbers">
-        {profile.stats.map((s) => (
-          <div className="hero-num-item" key={s.label}>
-            <div className="hero-num-value">{s.value}</div>
-            <div className="hero-num-label">{s.label}</div>
-          </div>
-        ))}
       </div>
     </section>
   );

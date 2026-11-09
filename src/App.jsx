@@ -21,7 +21,7 @@ export default function App() {
 
   return (
     <>
-      <Nav />
+      <Nav scrollTo={scrollTo} />
       <Hero scrollTo={scrollTo} />
       <About />
       <Skills />
