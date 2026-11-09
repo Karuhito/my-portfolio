@@ -18,33 +18,20 @@ export const profile = {
 
 export const skills = [
   {
-    icon: "🖥️",
-    title: "フロントエンド",
-    tags: ["JavaScript","TypeScript","React"],
-  },
-  {
-    icon: "⚙️",
+    icon: "Server",
     title: "バックエンド",
     tags: ["Python(Django)",],
   },
   {
-    icon: "🗄️",
+    icon: "Database",
     title: "データベース",
     tags: ["MySQL","PostgreSQL"],
   },
-  /*
-  // 学んだら追加予定
   {
-    icon: "☁️",
-    title: "インフラ・クラウド",
-    tags: [],
+    icon: "Code",
+    title: "フロントエンド",
+    tags: ["JavaScript","TypeScript","React"],
   },
-  {
-    icon: "🔐",
-    title: "セキュリティ・設計",
-    tags: [],
-  },
-  */
 ];
 
 export const projects = [
