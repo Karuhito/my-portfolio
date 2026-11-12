@@ -1,189 +1,67 @@
-.about-section {
-  border-top: 1px solid var(--border);
-}
-
-/* 2カラム: 左(テキスト+ターミナル) / 右(写真) */
+/* 2カラム: 左(文章 + 基本情報) / 右(写真) */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 380px;
-  gap: 80px;
-  align-items: center;
-}
-
-/* 左カラム */
-.about-left {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+  grid-template-columns: 1fr 220px;
+  gap: 40px;
+  align-items: start;
 }
 
 .about-text p {
   font-size: 14px;
   line-height: 2;
-  color: var(--text2);
+  color: var(--text-sub);
   margin-bottom: 16px;
 }
 .about-text p:last-child {
   margin-bottom: 0;
 }
 
-/* ターミナル */
-.terminal {
-  background: var(--bg2);
+/* 基本情報（所在地 / 主な言語 / 学習中） */
+.about-facts {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 4px 12px;
+  margin-top: 24px;
+  font-size: 13px;
+}
+.about-fact {
+  display: contents;
+}
+.about-facts dt {
+  color: var(--text-sub);
+}
+.about-facts dd {
+  margin: 0;
+}
+
+/* 写真（角丸8px・220px四方・1px枠線） */
+.about-photo-img,
+.about-photo-placeholder {
+  width: 220px;
+  height: 220px;
   border: 1px solid var(--border);
-  border-radius: 6px;
-  overflow: hidden;
+  border-radius: 8px;
 }
-.terminal-bar {
-  padding: 12px 16px;
-  background: var(--bg3);
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.t-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-.terminal-body {
-  padding: 20px 24px;
-  font-size: 12px;
-  line-height: 1.9;
-}
-.t-dim   { color: var(--text3); }
-.t-cmd   { color: var(--accent3); }
-.t-val   { color: var(--accent); }
-.t-str   { color: #f97316; }
-.t-key   { color: var(--text2); }
-
-/* 右カラム: 写真エリア */
-.about-photo-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-
-/* 写真ラッパー（円形＋装飾） */
-.photo-wrapper {
-  position: relative;
-  width: 300px;
-  height: 300px;
-}
-
-/* 写真本体 */
-.photo-img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+.about-photo-img {
+  display: block;
   object-fit: cover;
   object-position: center top;
-  display: block;
-  position: relative;
-  z-index: 2;
-  border: 3px solid var(--border);
-  filter: grayscale(20%);
-  transition: filter 0.4s ease;
 }
-.photo-img:hover {
-  filter: grayscale(0%);
-}
-
-/* プレースホルダー（写真未設定時） */
-.photo-placeholder {
-  display: none;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: 2px dashed var(--border);
-  background: var(--bg2);
-  flex-direction: column;
+.about-photo-placeholder {
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  position: relative;
-  z-index: 2;
-}
-.placeholder-icon {
-  font-size: 48px;
-  opacity: 0.4;
-}
-.placeholder-text {
-  font-size: 12px;
-  color: var(--accent);
-  letter-spacing: 1px;
-}
-.placeholder-sub {
-  font-size: 10px;
-  color: var(--text3);
+  background: var(--bg-soft);
+  color: var(--text-sub);
 }
 
-/* シアンのグロー（背景） */
-.photo-glow {
-  position: absolute;
-  inset: -20px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,217,255,0.12) 0%, transparent 70%);
-  z-index: 1;
-  animation: glow-pulse 3s ease-in-out infinite;
-}
-@keyframes glow-pulse {
-  0%, 100% { opacity: 0.6; transform: scale(1); }
-  50%       { opacity: 1;   transform: scale(1.05); }
-}
-
-/* アクセントリング（外側の回転リング） */
-.photo-ring {
-  position: absolute;
-  inset: -10px;
-  border-radius: 50%;
-  border: 1px solid transparent;
-  border-top-color: var(--accent);
-  border-right-color: rgba(0,217,255,0.3);
-  z-index: 3;
-  animation: ring-spin 8s linear infinite;
-}
-@keyframes ring-spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
-
-/* Open to Work バッジ */
-.photo-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 11px;
-  letter-spacing: 1px;
-  color: var(--accent3);
-  border: 1px solid rgba(16,185,129,0.25);
-  background: rgba(16,185,129,0.06);
-  padding: 8px 18px;
-  border-radius: 100px;
-}
-.badge-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--accent3);
-  animation: pulse 2s infinite;
-}
-
-/* レスポンシブ */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 56px;
+    gap: 32px;
   }
-  .about-photo-col {
-    order: -1; /* 写真を上に */
-  }
-  .photo-wrapper,
-  .photo-img,
-  .photo-placeholder {
-    width: 220px;
-    height: 220px;
+  /* 1カラムでは写真を文章の上に表示する */
+  .about-photo {
+    order: -1;
   }
 }

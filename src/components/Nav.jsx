@@ -1,29 +1,40 @@
+import ThemeToggle from './ThemeToggle';
 import './Nav.css';
 
-const sections = ['about', 'skills', 'projects', 'experience', 'contact'];
+const navLinks = [
+  { id: 'about', label: 'About Me' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'experience', label: 'Career' },
+  { id: 'contact', label: 'Contact' },
+];
 
-export default function Nav() {
-  const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
-
+/**
+ * 上部固定のナビゲーション。
+ * @param {{ scrollTo: (id: string) => void }} props
+ * @returns {JSX.Element}
+ */
+export default function Nav({ scrollTo }) {
   return (
     <nav className="nav">
-      <div className="nav-logo">
-        dev<span>.</span>portfolio
+      <div className="container nav-inner">
+        <div className="nav-logo">Portfolio</div>
+        <div className="nav-right">
+          <ul className="nav-links">
+            {navLinks.map((link) => (
+              <li key={link.id}>
+                <a
+                  href={`#${link.id}`}
+                  onClick={(e) => { e.preventDefault(); scrollTo(link.id); }}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <ThemeToggle />
+        </div>
       </div>
-      <ul className="nav-links">
-        {sections.map((s) => (
-          <li key={s}>
-            <a
-              href="#"
-              onClick={(e) => { e.preventDefault(); scrollTo(s); }}
-            >
-              {s}
-            </a>
-          </li>
-        ))}
-      </ul>
     </nav>
   );
 }

@@ -2,9 +2,24 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-portfolio</title>
+    <title>Karuhito's portfolio</title>
+    <script>
+      // React の描画前にテーマを決めてちらつきを防ぐ
+      (function () {
+        var theme = 'light';
+        try {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          var saved = localStorage.getItem('theme');
+          if (saved === 'light' || saved === 'dark') {
+            theme = saved;
+          }
+        } catch (e) {
+          // 例外時は直前に決めた OS 設定の値のまま使う
+        }
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

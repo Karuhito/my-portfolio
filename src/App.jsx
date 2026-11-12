@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -10,58 +9,26 @@ import './styles/global.css';
 import './App.css';
 
 export default function App() {
-  const cursorRef = useRef(null);
-  const trailRef = useRef(null);
-
-  // Custom cursor
-  useEffect(() => {
-    const moveCursor = (e) => {
-      if (cursorRef.current) {
-        cursorRef.current.style.left = e.clientX - 5 + 'px';
-        cursorRef.current.style.top = e.clientY - 5 + 'px';
-      }
-      if (trailRef.current) {
-        trailRef.current.style.left = e.clientX + 'px';
-        trailRef.current.style.top = e.clientY + 'px';
-      }
-    };
-    window.addEventListener('mousemove', moveCursor);
-    return () => window.removeEventListener('mousemove', moveCursor);
-  }, []);
-
-  // Scroll fade-in
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add('visible');
-        });
-      },
-      { threshold: 0.1 }
-    );
-    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
-
+  /**
+   * 指定した id のセクションへスクロールする（動きを減らす設定のときは即時移動）
+   * @param {string} id
+   * @returns {void}
+   */
   const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.getElementById(id)?.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
   };
 
   return (
     <>
-      <div ref={cursorRef} className="cursor" />
-      <div ref={trailRef} className="cursor-trail" />
-      <Nav />
+      <Nav scrollTo={scrollTo} />
       <Hero scrollTo={scrollTo} />
       <About />
       <Skills />
       <Projects />
       <Experience />
       <Contact />
-      <footer className="footer">
-        <p>© 2025 Enomoto Kazuto. Built with React.</p>
-        <p className="footer-sub">BACKEND ENGINEER / IBARAKI, JAPAN</p>
-      </footer>
+      <footer className="footer"><div className="container">© 2026 Enomoto Kazuto</div></footer>
     </>
   );
 }
