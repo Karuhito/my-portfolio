@@ -11,7 +11,7 @@ export default function Hero({ scrollTo }) {
       <div className="container">
         <h1 className="hero-name">榎本 和斗</h1>
         <p className="hero-en">Enomoto Kazuto</p>
-        <p className="hero-sub">エンジニア志望の28卒の学生</p>
+        <p className="hero-sub">バックエンドエンジニア志望の28卒の学生</p>
         <div className="hero-cta">
           <a href="#projects" className="btn-primary" onClick={(e) => { e.preventDefault(); scrollTo('projects'); }}>
             View Projects
