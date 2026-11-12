@@ -1,5 +1,5 @@
 /* フォントはここで差し替える（@import と --font-body / --font-heading の2か所） */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 /* ライト（既定） */
 :root {
@@ -10,8 +10,8 @@
   --border: #d8dee4;
   --link: #0969da;
 
-  --font-body: 'JetBrains Mono', monospace;
-  --font-heading: 'Syne', sans-serif;
+  --font-body: 'Noto Sans JP', sans-serif;
+  --font-heading: 'Noto Sans JP', sans-serif;
 
   color-scheme: light;
 }
