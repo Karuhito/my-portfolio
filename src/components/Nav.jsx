@@ -2,11 +2,11 @@ import ThemeToggle from './ThemeToggle';
 import './Nav.css';
 
 const navLinks = [
-  { id: 'about', label: '自己紹介' },
-  { id: 'skills', label: '技術' },
-  { id: 'projects', label: '制作物' },
-  { id: 'experience', label: '経歴' },
-  { id: 'contact', label: '連絡先' },
+  { id: 'about', label: 'About Me' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'experience', label: 'Career' },
+  { id: 'contact', label: 'Contact' },
 ];
 
 /**
@@ -18,7 +18,7 @@ export default function Nav({ scrollTo }) {
   return (
     <nav className="nav">
       <div className="container nav-inner">
-        <div className="nav-logo">Enomoto Kazuto</div>
+        <div className="nav-logo">Portfolio</div>
         <div className="nav-right">
           <ul className="nav-links">
             {navLinks.map((link) => (

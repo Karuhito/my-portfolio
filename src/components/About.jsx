@@ -20,7 +20,7 @@ export default function About() {
   return (
     <section id="about">
       <div className="container">
-        <h2 className="section-title">自己紹介</h2>
+        <h2 className="section-title">About Me</h2>
 
         <div className="about-grid">
           <div className="about-main">
@@ -47,7 +47,7 @@ export default function About() {
               </div>
             ) : (
               <img
-                src="/myface.jpg"
+                src="/myface.jpeg"
                 alt="榎本 和斗の写真"
                 className="about-photo-img"
                 onError={() => setPhotoFailed(true)}

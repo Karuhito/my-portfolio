@@ -10,10 +10,7 @@ export default function Contact() {
   return (
     <section id="contact">
       <div className="container">
-        <h2 className="section-title">一緒に働きませんか？</h2>
-        <p className="contact-text">
-          ポジション関係なく実務経験を積ませていただける企業様を探しています。
-        </p>
+        <h2 className="section-title">Contact</h2>
         <div className="contact-links">
           <a href={`mailto:${profile.contact.email}`} className="btn-outline">
             <Mail size={16} strokeWidth={2} aria-hidden="true" />

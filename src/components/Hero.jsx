@@ -11,13 +11,13 @@ export default function Hero({ scrollTo }) {
       <div className="container">
         <h1 className="hero-name">榎本 和斗</h1>
         <p className="hero-en">Enomoto Kazuto</p>
-        <p className="hero-sub">Python を主軸にする バックエンドエンジニア。</p>
+        <p className="hero-sub">エンジニア志望の28卒の学生</p>
         <div className="hero-cta">
           <a href="#projects" className="btn-primary" onClick={(e) => { e.preventDefault(); scrollTo('projects'); }}>
-            制作物を見る
+            View Projects
           </a>
           <a href="#contact" className="btn-outline" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }}>
-            連絡する
+            Contact
           </a>
         </div>
       </div>

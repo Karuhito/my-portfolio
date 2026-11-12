@@ -11,7 +11,7 @@ export default function Projects() {
   return (
     <section id="projects">
       <div className="container">
-        <h2 className="section-title">制作物</h2>
+        <h2 className="section-title">Projects</h2>
 
         <div className="projects-list">
           {projects.map((p) => (
