@@ -7,7 +7,7 @@ export const profile = {
   bio: [
     "榎本 和斗",
     "プログラミングの専門校に通っている28卒の学生です。",
-    "現在はJavaやTypeScriptなどの開発言語やPostgreSQLなどデータベース言語や、要件定義・設計など上流工程部分の考え方、基本情報技術者の資格学習など多岐にわたる範囲の学習をしています。",
+    "現在はJavaやTypeScriptなどの開発言語やPostgreSQLなどデータベース言語、要件定義・設計など上流工程部分の考え方、基本情報技術者の資格学習など多岐にわたる範囲の学習をしています。",
   ],
   contact: {
     email: "kazutopg@gmail.com",
