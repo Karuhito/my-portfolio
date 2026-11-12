@@ -16,14 +16,12 @@
   color: var(--text-sub);
 }
 
-.tl-title {
+/* 所属を各項目の見出しにする */
+.tl-org {
   font-family: var(--font-heading);
   font-size: 16px;
   font-weight: 700;
-}
-.tl-org {
-  font-size: 13px;
-  color: var(--text-sub);
+  color: var(--text);
 }
 .tl-desc {
   margin-top: 8px;
