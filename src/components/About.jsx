@@ -14,6 +14,7 @@ export default function About() {
   const facts = [
     { label: '所在地', value: profile.location },
     { label: '主な言語', value: profile.languages.join(', ') },
+    { label: 'データベース', value: profile.databases.join(', ') },
     { label: '学習中', value: profile.interests.join(', ') },
   ];
 

@@ -1,8 +1,9 @@
 export const profile = {
   name: "ENOMOTO KAZUTO",
   location: "Ibaraki, Japan",
-  languages: ["Python", "JavaScript", "Java" ],
-  interests: ["TypeScript", "Spring Boot", "FastAPI", "React"],
+  languages: ["Python", "Java", "JavaScript"],
+  databases: ["MySQL", "PostgreSQL"],
+  interests: ["TypeScript"],
   bio: [
     "榎本 和斗",
     "プログラミングの専門校に通っている28卒の学生です。",
