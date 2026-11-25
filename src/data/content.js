@@ -27,7 +27,7 @@ export const skills = [
     items: [
       { name: "Python", level: "主に使用", note: "個人制作やチーム開発で使用した経験があります。" },
       { name: "Java", level: "主に使用", note: "現在Java+Spring Bootで開発中のプロジェクトがあります。" },
-      { name: "JavaScript", level: "使用経験あり", note: "簡単なDOM操作やJournaLogやInvyで画面の表示切り替えなどフロント側の制御に使用した経験があります。"},
+      { name: "JavaScript", level: "使用経験あり", note: "簡単なDOM操作やJournaLogやInbyで画面の表示切り替えなどフロント側の制御に使用した経験があります。"},
       { name: "TypeScript", level: "学習中", note: "TypeScriptの特徴である型定義やJavaScript同様簡単なDOM操作はできます。授業や個人開発を通じて学習をしている状態です。"},
     ],
   },
@@ -43,7 +43,7 @@ export const skills = [
     icon: "Layers",
     title: "フレームワーク",
     items: [
-      { name: "Django", level: "使用経験あり", note: "JournaLogとInvyの開発で使用した経験があります。" },
+      { name: "Django", level: "使用経験あり", note: "JournaLogとInbyの開発で使用した経験があります。" },
       { name: "Spring Boot", level: "学習中", note: "現在チーム開発プロジェクトで使用しています。学びながら開発を進めている状況です。" },
       { name: "FastAPI", level: "学習中", note: "GroupSyncで使用した経験がありますが、まだ理解しているとは言えない状態です。理解を深める必要があると考えています。" },
       { name: "React", level: "学習中", note: "すっきりチェックの開発で使用した経験はありますが、まだ自信をもって理解しているとは言えない状態です。まだスキル向上の余地があると考えています。" },
@@ -81,10 +81,10 @@ export const projects = [
     link: "https://github.com/Karuhito/belongings-check-app",
   },
   {
-    title:"Invy",
+    title:"Inby",
     desc:"チーム開発で季節の思い出をミッション型スタンプラリーのような形式で写真の記録を残せるWebアプリケーションを開発しました。私はチームリーダーとして、GitHub上でissueを利用したタスク管理、メンバーへのタスク割り振り、Renderへのデプロイ環境の設定などを行いました。",
     tags:["Python","Django","JavaScript","PostgreSQL","チーム開発"],
-    thumbnail: "/projects/invy-screen.jpeg",
+    thumbnail: "/projects/inby-screen.jpeg",
     link: "https://github.com/KDGT2026-Summer-Techjam/Team-B-Django"
   },
   {
