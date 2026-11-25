@@ -54,28 +54,28 @@ export const skills = [
 export const projects = [
   {
     title: "JournaLog",
-    desc: "Djangoを用いて日常のタスクを管理できるwebアプリケーションを開発しました。その日のGoal、Todo、スケジュール、思ったことや振り返りを記録に残すことができます。このwebアプリケーションの開発では、Djangoでの基本的なCRUD操作を学びました。",
+    desc: "Djangoを用いて日常のタスクを管理できるWebアプリケーションを開発しました。その日のGoal、Todo、スケジュール、思ったことや振り返りを記録に残すことができます。このwebアプリケーションの開発では、Djangoでの基本的なCRUD操作を学びました。",
     tags: ["Python","Django","PostgreSQL","JavaScript"],
     thumbnail: "/projects/journalog-screen.jpeg",
     link: "https://github.com/Karuhito/JournaLog_app",
   },
   {
     title: "Fit Fight",
-    desc: "チーム開発でFirebase+VanillaJSを用いて運動記録をスコア化し、フレンドと競い合うことができるwebアプリケーションを開発しました。私はスコア計算部分の実装や初期データの作成部分に携わりました。",
+    desc: "チーム開発でFirebase+VanillaJSを用いて運動記録をスコア化し、フレンドと競い合うことができるWebアプリケーションを開発しました。私はスコア計算部分の実装や初期データの作成部分に携わりました。",
     tags: ["JavaScript","Firebase","チーム開発"],
     thumbnail: "/projects/fitfight-screen.jpeg",
     link: "https://github.com/Tech-Jam-KDG-2026-Winter/Team-13-HTML-CSS-JS",
   },
   {
     title: "GroupSync",
-    desc: "[開発中] Discordのアカウント認証を利用したwebアプリケーションを開発しています。フレンドに自分の空き時間の情報を共有し合うことで一緒にゲームする予定の時間の調整をすることができます。結合テスト段階で複数のバグが見つかっているので修正対応を進めています。",
+    desc: "[開発中] Discordのアカウント認証を利用したWebアプリケーションを開発しています。フレンドに自分の空き時間の情報を共有し合うことで一緒にゲームする予定の時間の調整をすることができます。結合テスト段階で複数のバグが見つかっているので修正対応を進めています。",
     tags: ["TypeScript","React", "Python", "FastAPI", "PostgreSQL"],
     thumbnail: "/projects/groupsync-screen.jpeg",
     link: "https://github.com/Karuhito/group-schedule-adjustment-app",
   },
   {
     title: "すっきりチェック",
-    desc: "持ち物管理ができるwebアプリケーションを開発しました。ここではブラウザのLocalStorageの仕組みを学び、必ずしもデータベースを使用する必要はないということや作るものの規模に応じてデータベースを使用するかの判断を学びました。",
+    desc: "持ち物管理ができるWebアプリケーションを開発しました。ここではブラウザのLocalStorageの仕組みを学び、必ずしもデータベースを使用する必要はないということや作るものの規模に応じてデータベースを使用するかの判断を学びました。",
     tags: ["TypeScript","React","LocalStorage"],
     thumbnail: "/projects/belongingcheck-screen.jpeg",
     link: "https://github.com/Karuhito/belongings-check-app",
