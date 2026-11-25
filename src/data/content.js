@@ -6,7 +6,7 @@ export const profile = {
   interests: ["TypeScript"],
   bio: [
     "榎本 和斗",
-    "プログラミングの専門校に通っている28卒の学生です。",
+    "プログラミングの専門スクールに通っている28卒の学生です。",
     "現在はJavaやTypeScriptなどの開発言語やPostgreSQLなどデータベース言語、要件定義・設計など上流工程部分の考え方、基本情報技術者の資格学習など多岐にわたる範囲の学習をしています。",
   ],
   contact: {
@@ -54,7 +54,7 @@ export const skills = [
 export const projects = [
   {
     title: "JournaLog",
-    desc: "Djangoを用いて日常のタスクを管理できるWebアプリケーションを開発しました。その日のGoal、Todo、スケジュール、思ったことや振り返りを記録に残すことができます。このwebアプリケーションの開発では、Djangoでの基本的なCRUD操作を学びました。",
+    desc: "Djangoを用いて日常のタスクを管理できるWebアプリケーションを開発しました。その日のGoal、Todo、スケジュール、思ったことや振り返りを記録に残すことができます。このWebアプリケーションの開発では、Djangoでの基本的なCRUD操作を学びました。",
     tags: ["Python","Django","PostgreSQL","JavaScript"],
     thumbnail: "/projects/journalog-screen.jpeg",
     link: "https://github.com/Karuhito/JournaLog_app",
@@ -82,14 +82,14 @@ export const projects = [
   },
   {
     title:"Invy",
-    desc:"チーム開発で季節の思い出をミッション型スタンプラリーのような形式で写真の記録を残せるwebアプリケーションを開発しました。私はチームリーダーとして、GitHub上でissueを利用したタスク管理、メンバーへのタスク割り振り、Renderへのデプロイ環境の設定などを行いました。",
+    desc:"チーム開発で季節の思い出をミッション型スタンプラリーのような形式で写真の記録を残せるWebアプリケーションを開発しました。私はチームリーダーとして、GitHub上でissueを利用したタスク管理、メンバーへのタスク割り振り、Renderへのデプロイ環境の設定などを行いました。",
     tags:["Python","Django","JavaScript","PostgreSQL","チーム開発"],
     thumbnail: "/projects/invy-screen.jpeg",
     link: "https://github.com/KDGT2026-Summer-Techjam/Team-B-Django"
   },
   {
     title: "オーダールーム",
-    desc: "[開発中] ホームパーティなどを開く際に必要だと思うアイテムをメンバーが提案し、ホストがアイテムを採用、却下の判断を行い、予算や実際の費用、何をいくつ購入するかをまとめられるwebアプリケーションを開発中です。3人体制でリーダー、フロントエンド、バックエンド1人ずつの体制で、私はバックエンドを担当しています。",
+    desc: "[開発中] ホームパーティなどを開く際に必要だと思うアイテムをメンバーが提案し、ホストがアイテムを採用、却下の判断を行い、予算や実際の費用、何をいくつ購入するかをまとめられるWebアプリケーションを開発中です。3人体制でリーダー、フロントエンド、バックエンド1人ずつの体制で、私はバックエンドを担当しています。",
     tags: ["Java", "Spring Boot", "TypeScript", "React", "チーム開発"],
     thumbnail: "/projects/orderroom-screen.jpeg",
     link: "https://github.com/sisicity4/OrderRoom"
